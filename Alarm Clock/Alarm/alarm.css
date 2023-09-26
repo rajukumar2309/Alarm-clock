@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(163, 215, 149);
+}
+/* main container */
+.wrapper{
+    width: 440px;
+    background: rgba(99, 210, 72, 0.874);
+    border-style: ridge;
+    border-radius: 20px;
+    padding: 30px 30px 40px;
+    flex-direction: column;
+}
+/* content */
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+/* clock image */
+.wrapper img{
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.wrapper img:hover {
+    transform: scaleX(-1);
+    border-radius: 50%;
+  }
+
+.wrapper h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+    color: rgb(63, 8, 135);
+}
+/* column of Hr, Min, AP/MP */
+.column{    
+    border-style: inset;
+    border-radius: 5px;
+    padding: 0 10px;   
+}
+
+.column:hover{
+    background-color: rgba(173, 149, 142, 0.723);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+select{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: large;
+}
+/* set alarm button */
+button{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(238, 167, 167);
+    color: rgb(17, 32, 17);
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0; 
+    border-radius: 6px;
+    background: rgba(205, 226, 229, 0.899);
+    transition-duration: 0.6s;
+}
+
+button:hover {
+    background-color: rgba(235, 67, 16, 0.723);
+    color: rgb(232, 234, 222);
+    border: 1px solid rgb(71, 163, 239);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

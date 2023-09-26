@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALARM CLOCK</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+    <!-- main-container -->
+    <div class="wrapper">
+
+            <!-- image of alarm clock -->
+        <img src="https://t4.ftcdn.net/jpg/01/96/92/89/240_F_196928961_LVhMK3VR9SZW0i4O4Jv2VGPs3FR25qzH.jpg"
+            alt="clock" />
+
+            <!-- Heading -->
+        <h1> 00:00:00 AM </h1>
+
+            <!-- content -->
+        <div class="content">
+
+            <!-- Dropdown menu to select an Hour -->
+            <div class="column">
+                <select>
+                    <option value="Hour" selected hidden> Hour </option>                    
+                </select>
+            </div>
+            <!-- Dropdown menu to select an Minute -->
+            <div class="column">
+                <select>
+                    <option value="Minute" selected hidden> Minute </option>                    
+                </select>
+            </div>
+            <!-- Dropdown menu to select an AM/PM -->
+            <div class="column">
+                <select>
+                    <option value="AM/PM" selected hidden> AM/PM </option>                                   
+                </select>
+            </div>
+        </div>
+
+        <!-- button to set Alarm -->
+        <button> Set Alarm </button>         
+    </div>
+    
+    <script src="alarm.js"></script>
+</body>
+
+</html>
